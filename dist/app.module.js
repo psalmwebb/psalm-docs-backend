@@ -35,7 +35,7 @@ var AppModule = /** @class */ (function () {
                     password: process.env.db_pass,
                     database: process.env.db_name,
                     entities: [User_1.User, Document_1.Document],
-                    synchronize: false,
+                    synchronize: true,
                     migrationsRun: false
                 }),
                 serve_static_1.ServeStaticModule.forRoot({

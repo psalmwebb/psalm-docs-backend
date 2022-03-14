@@ -36,7 +36,7 @@ var AppModule = /** @class */ (function () {
                     database: process.env.db_name,
                     entities: [User_1.User, Document_1.Document],
                     synchronize: false,
-                    migrationsRun: true
+                    migrationsRun: false
                 }),
                 serve_static_1.ServeStaticModule.forRoot({
                     rootPath: (0, path_1.join)(__dirname, "..", "cbuild")

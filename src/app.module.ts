@@ -26,7 +26,7 @@ config({path:join(__dirname,"..",".env")});
       password:process.env.db_pass,
       database: process.env.db_name,
       entities: [User,Document],
-      synchronize: false,
+      synchronize: true,
       migrationsRun:true
   }),
   ServeStaticModule.forRoot({
